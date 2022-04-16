@@ -3,21 +3,13 @@
     <head>
         <title>Este texto es el título del documento</title>
         <!-- Js embedded -->
-        <script>
-            function mostrarAlerta() {
-                alert('hizo clic!');
-            }
-            function hacerclic() {
-                document.getElementsByTagName('p')[0].onclick=mostrarAlerta;
-            }
-            window.onload = hacerclic;
-        </script>
+        <script src="micodigo.js"></script>
     </head>
     <body>
         <div id="principal">
             <!-- Js inline -->
             <!-- <p onclick="alert('hizo clic!')">Hacer Clic</p> -->
-            <p onmouseover="alert('hizo clic!')">Hacer Clic</p>
+            <p>Hacer Clic</p>
             <p>No puede hacer clic</p>
         </div>
     </body>
