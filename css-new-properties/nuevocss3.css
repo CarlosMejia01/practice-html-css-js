@@ -1,0 +1,84 @@
+body {
+    text-align: center;
+}
+
+#principal {
+    display: block;
+    width: 500px;
+    margin: 50px auto;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #999999;
+    background: #DDDDDD;
+
+    /* new */
+    /* border-radius */
+    -moz-border-radius: 20px / 10px;
+    -webkit-border-radius: 20px / 10px;
+    border-radius: 20px / 10px;
+
+    /* box-shadow */
+    -moz-box-shadow: rgb(150, 150, 150) 5px 5px 10px;
+    -webkit-box-shadow: rgb(150, 150, 150) 5px 5px 10px;
+    box-shadow: rgb(150, 150, 150) 5px 5px 10px;
+
+    /* gradient */
+    /* background: -webkit-linear-gradient(top, #FFFFFF 50%, #006699 90%);
+    background: -moz-linear-gradient(top, #FFFFFF 50%, #006699 90%); */
+    background: -webkit-radial-gradient(center, circle, #FFFFFF 0%, #006699 200%);
+    background: -moz-radial-gradient(center, circle, #FFFFFF 0%, #006699 200%);
+
+    /* outline */
+    outline: 2px dashed #000099;
+    outline-offset: 15px;
+
+    /* border-imgage */
+    -moz-border-image: url("diamonds.png") 29 stretch;
+    -webkit-border-image: url("diamonds.png") 29 stretch;
+    border-image: url("diamonds.png") 29 stretch;
+
+    /* scale */
+    /* -moz-transform: scale(1,-1);
+    -webkit-transform: scale(1,-1); */
+
+    /* rotate */
+    /* -moz-transform: rotate(30deg);
+    -webkit-transform: rotate(30deg); */
+
+    /* skew */
+    /* -moz-transform: skew(20deg);
+    -webkit-transform: skew(20deg); */
+
+    /* translate */
+    /* -moz-transform: translate(100px);
+    -webkit-transform: translate(100px); */
+
+    /* combined function */
+    /* -moz-transform: translateY(100px) rotate(45deg) scaleX(0.3);
+    -webkit-transform: translateY(100px) rotate(45deg) scaleX(0.3); */
+
+    /* dinamic function */
+    -moz-transition: -moz-transform 1s ease-in-out 0.5s;
+    -webkit-transition: -webkit-transform 1s ease-in-out 0.5s;
+}
+
+#principal:hover {  
+    -moz-transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+
+}
+
+#titulo {
+    font: bold 36px MiNuevaFuente, verdana, sans-serif;
+    /* text-shadow */
+    /* text-shadow: rgb(0, 0, 150) 3px 3px 5px; */
+    /* text-shadow: rgba(0, 0, 0, 0.5) 3px 3px 5px; */
+    color: hsla(120, 100%, 50%, 0.5)
+}
+
+/* new */
+/* new font */
+@font-face {
+    font-family: 'MiNuevaFuente';
+    src: url('font.ttf');
+}
