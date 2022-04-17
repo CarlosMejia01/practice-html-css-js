@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Reproductor de video</title>
+    <!-- Js embedded -->
+    <link rel="stylesheet" href="reproductor.css">
+    <link rel="stylesheet" href="player.css">
+    <script src="reproductor.js"></script>
+</head>
+
+<body>
+    <section id="reproductor">
+        <video id="medio" width="720" height="400">
+            <source src="https://download.blender.org/peach/trailer/trailer_400p.ogg"/>
+        </video>
+    </section>
+    <nav>
+        <div id="botones">
+            <button type="button" id="reproducir">Reproducir</button>
+        </div>
+        <div id="barra">
+            <div id="progreso"></div>
+        </div>
+        <div style="clear: both"></div>
+    </nav>
+</body>
+
+</html>
