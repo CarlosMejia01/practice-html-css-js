@@ -1,2 +1,3 @@
-# html-css-model-box
-testing box model in css
+# practice-html-css-js
+
+Practicing the new features surrounding HTML5
