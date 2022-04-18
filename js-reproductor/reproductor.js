@@ -31,3 +31,14 @@ function estado() {
     window.clearInterval(bucle);
   }
 }
+
+function mover(e) {
+  if (!medio.paused && !medio.ended) {
+    var ratonX = e.pageX - barra.offsetLeft;
+    var nuevoTiempo = (ratonX * medio.duration) / maximo;
+    medio.currentTime = nuevoTiempo;
+    progeso.style.width = ratonX + "px";
+  }
+}
+
+window.addEventListener('load', iniciar, false);
